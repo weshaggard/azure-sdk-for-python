@@ -4,6 +4,7 @@ extends:
     template: /eng/pipelines/templates/stages/archetype-sdk-tests.yml
     parameters:
       ServiceDirectory: template
+      SupportedClouds: 'Public,UsGov,China'
       MatrixReplace:
         - TestSamples=.*/true
       EnvVars:
